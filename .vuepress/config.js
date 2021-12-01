@@ -4,12 +4,16 @@ module.exports = {
   dest: './dist',
   base: '/',
   head: [
-    // ['script', { src: 'https://tajs.qq.com/stats?sId=66403914', charset: 'UTF-8' }]
+    // ['script', { src: 'https://tajs.qq.com/stats?sId=66403914', charset: 'UTF-8'}],
+    ['meta', { name: 'Keywords', content: 'ccoderJava,ccoder,聪聪的日志' }],
+    ['meta', { name: 'description', content: '记录开发生活,ccoderJava,聪聪,ccoder'}],
+    ['link', { rel: 'icon', href: '../public/favicon.ico' }]
   ],
   title: '聪聪的日志',
-  description: '记录开发生活',
+  description: '记录开发生活,ccoderJava,聪聪,ccoder',
   theme: '@vuepress/blog',
   themeConfig: {
+    lastUpdated:'上次更新',
     dateFormat: 'YYYY-MM-DD',
     nav: [
       { text: '首页', link: '/' },
@@ -26,7 +30,7 @@ module.exports = {
       contact: [
         {
           type: 'github',
-          link: 'https://github.com/ccoderJava/blog',
+          link: 'https://github.com/ccoderJava',
         },
       ],
     },
@@ -64,6 +68,7 @@ module.exports = {
     }
   },
   markdown: {
+    //markdown 中代码块显示行号
     lineNumbers: true
   },
   plugins: [
