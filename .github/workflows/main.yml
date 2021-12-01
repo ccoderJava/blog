@@ -21,7 +21,7 @@ jobs:
 
           git init
           git config user.email "congccoder@gmail.com"
-          git config user.name "congJava"
+          git config user.name "ccoderJava"
           git add -A
           git commit -m 'deploy'
 
