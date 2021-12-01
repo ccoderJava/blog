@@ -4,9 +4,6 @@ module.exports = {
   dest: './dist',
   base: '/',
   head: [
-    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
-    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
-    ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }],
     ['meta', { name: 'Keywords', content: 'ccoderJava,ccoder,聪聪的日志' }],
     ['meta', { name: 'description', content: '记录开发生活,ccoderJava,聪聪,ccoder' }],
     ['link', { rel: 'icon', href: '../public/favicon.ico' }]
