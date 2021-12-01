@@ -23,11 +23,7 @@ jobs:
           git config user.email "congccoder@gmail.com"
           git config user.name "ccoderJava"
           git add -A
-          git commit -m "action:`date`"
+          git commit -am "action:`date`"
 
-          git push -f https://ccoderjava:${{ secrets.CCODERJAVA_BLOG }}@github.com/ccoderjava/ccoderjava.github.io.git master
+          git push -f https://ccoderjava:${{ secrets.GITHUB_TOKEN }}@github.com/ccoderjava/ccoderjava.github.io.git master
 
-<<<<<<< HEAD
-=======
-          git push -f https://ccoderjava:${{ secrets.CCODERJAVA_BLOG }}@github.com/ccoderjava/ccoderjava.github.io.git master
->>>>>>> af84c70f555cf18b6e6f39a0bcf5cb3438a74057
