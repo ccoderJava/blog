@@ -6,14 +6,14 @@ module.exports = {
   head: [
     // ['script', { src: 'https://tajs.qq.com/stats?sId=66403914', charset: 'UTF-8' }]
   ],
-  title: '洋子的自留地',
-  description: '互联网的搬运工',
+  title: '聪聪的日志',
+  description: '记录开发生活',
   theme: '@vuepress/blog',
   themeConfig: {
     dateFormat: 'YYYY-MM-DD',
     nav: [
       { text: '首页', link: '/' },
-      // { text: '分类', link: '/category/' },
+      { text: '分类', link: '/category/' },
       { text: '标签', link: '/tag/' },
     ],
     footer: {
@@ -26,7 +26,7 @@ module.exports = {
       contact: [
         {
           type: 'github',
-          link: 'https://github.com/purocean/blog',
+          link: 'https://github.com/ccoderJava/blog',
         },
       ],
     },
@@ -53,14 +53,14 @@ module.exports = {
     },
     comment: {
       service: 'vssue',
-      owner: 'purocean',
+      owner: 'ccoderJava',
       repo: 'blog',
-      clientId: '2e4274abbb0604471a05',
-      clientSecret: 'ede53d6baee3682a98ed79d2887450ad34806ede',
-      proxy: 'https://leoy233.website/proxy/login/oauth/access_token'
+      clientId: 'e840ebe73571b97960d3',
+      clientSecret: 'b8b02dfa474c62809a030e23ba63b4140946a0b6',
+      proxy: 'http://blog.ccoder.cc/'
     },
     feed: {
-      canonical_base: 'https://purocean.github.io',
+      canonical_base: 'http://blog.ccoder.cc/',
     }
   },
   markdown: {

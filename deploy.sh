@@ -10,13 +10,13 @@ yarn run dist
 cd dist
 
 # 如果是发布到自定义域名
-# echo 'www.example.com' > CNAME
+echo 'blog.ccoder.cc' > CNAME
 
 git init
 git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:purocean/purocean.github.io.git master
+git push -f git@github.com:ccoderJava/ccoderJava.github.io.git master
 
 cd -
