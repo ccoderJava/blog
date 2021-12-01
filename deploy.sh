@@ -14,7 +14,7 @@ echo 'blog.ccoder.cc' > CNAME
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'auto deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
 git push -f git@github.com:ccoderJava/ccoderJava.github.io.git master
