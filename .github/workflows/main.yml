@@ -1,4 +1,4 @@
-name: deploy_ci
+name: deploy vuepress blog
 
 on:
   push:
@@ -9,21 +9,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: checkout
       - uses: actions/checkout@v2
-      - name: build
-        run: yarn && yarn run dist
-      - name: deploy
-        run: |
-          cd dist
 
-          # 如果是发布到自定义域名
-          echo 'blog.ccoder.cc' > CNAME
+      - name: build and deploy
+        uses: jenkey2011/vuepress-deploy@v1.8.1
+        env:
+          ACCESS_TOKEN: ${{ secrets.BLOG_ACCESS_TOKEN }}
+          TARGET_REPO: jenkey2011/vuepress-deploy-demo-target
+          TARGET_BRANCH: master
+          BUILD_SCRIPT: yarn && yarn run dist
+          BUILD_DIR: /dist/
 
-          git init
-          git config user.email "congccoder@gmail.com"
-          git config user.name "ccoderJava"
-          git add -A
-          git commit -am "action:`date`"
 
-          git push -f https://ccoderjava:${{ secrets.GITHUB_TOKEN }}@github.com/ccoderjava/ccoderjava.github.io.git master
 
