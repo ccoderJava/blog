@@ -20,6 +20,8 @@ jobs:
           TARGET_BRANCH: master
           BUILD_SCRIPT: yarn && yarn run dist
           BUILD_DIR: dist/
+          COMMIT_MESSAGE: auto deploy from action `date`
+          CNAME: blog.ccoder.cc
 
 
 
