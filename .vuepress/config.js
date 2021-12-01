@@ -4,16 +4,18 @@ module.exports = {
   dest: './dist',
   base: '/',
   head: [
-    // ['script', { src: 'https://tajs.qq.com/stats?sId=66403914', charset: 'UTF-8'}],
+    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
+    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
+    ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }],
     ['meta', { name: 'Keywords', content: 'ccoderJava,ccoder,聪聪的日志' }],
-    ['meta', { name: 'description', content: '记录开发生活,ccoderJava,聪聪,ccoder'}],
+    ['meta', { name: 'description', content: '记录开发生活,ccoderJava,聪聪,ccoder' }],
     ['link', { rel: 'icon', href: '../public/favicon.ico' }]
   ],
   title: '聪聪的日志',
   description: '记录开发生活,ccoderJava,聪聪,ccoder',
   theme: '@vuepress/blog',
   themeConfig: {
-    lastUpdated:'上次更新',
+    lastUpdated: '上次更新',
     dateFormat: 'YYYY-MM-DD',
     nav: [
       { text: '首页', link: '/' },
@@ -60,7 +62,7 @@ module.exports = {
       owner: 'ccoderJava',
       repo: 'blog',
       clientId: 'e840ebe73571b97960d3',
-      clientSecret: 'b8b02dfa474c62809a030e23ba63b4140946a0b6',
+      clientSecret: 'f8db56f33f43d10612a08703ff4569b45b484110',
       proxy: 'http://blog.ccoder.cc/'
     },
     feed: {
