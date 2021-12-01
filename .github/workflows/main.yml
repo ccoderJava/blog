@@ -16,7 +16,7 @@ jobs:
         uses: jenkey2011/vuepress-deploy@v1.8.1
         env:
           ACCESS_TOKEN: ${{ secrets.BLOG_ACCESS_TOKEN }}
-          TARGET_REPO: jenkey2011/vuepress-deploy-demo-target
+          TARGET_REPO: ccoderJava/ccoderJava.github.io
           TARGET_BRANCH: master
           BUILD_SCRIPT: yarn && yarn run dist
           BUILD_DIR: /dist/
