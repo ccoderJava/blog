@@ -24,5 +24,4 @@ jobs:
           git config user.name "ccoderJava"
           git add -A
           git commit -am "auto deploy from action `date`"
-
           git push -f https://ccoderJava:${{ secrets.BLOG_ACCESS_TOKEN }}@github.com/ccoderJava/ccoderJava.github.io.git master
