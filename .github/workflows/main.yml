@@ -25,4 +25,4 @@ jobs:
           git add -A
           git commit -m 'deploy'
 
-          git push -f https://ccoderjava:${{ secrets.GIT_ACCESSTOKEN }}@github.com/ccoderjava/ccoderjava.github.io.git master
+          git push -f https://ccoderjava:${{ secrets.CCODERJAVA_BLOG }}@github.com/ccoderjava/ccoderjava.github.io.git master
