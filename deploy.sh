@@ -11,7 +11,6 @@ cd dist
 
 # 如果是发布到自定义域名
 echo 'blog.ccoder.cc' > CNAME
-echo 'java.ccoder.cc' > CNAME
 
 git init
 git add -A
