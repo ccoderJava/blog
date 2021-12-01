@@ -13,7 +13,8 @@ module.exports = {
   theme: '@vuepress/blog',
   themeConfig: {
     lastUpdated: '上次更新',
-    dateFormat: 'YYYY-MM-DD',
+    dateFormat: 'YYYY-MM-DD hh:mm:ss',
+    logo:'./public/favicon.png',
     nav: [
       { text: '首页', link: '/' },
       { text: '分类', link: '/category/' },
