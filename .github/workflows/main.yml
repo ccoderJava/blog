@@ -19,7 +19,7 @@ jobs:
           TARGET_REPO: ccoderJava/ccoderJava.github.io
           TARGET_BRANCH: master
           BUILD_SCRIPT: yarn && yarn run dist
-          BUILD_DIR: /dist/
+          BUILD_DIR: dist/
 
 
 
