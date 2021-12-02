@@ -1,3 +1,5 @@
+const moment = require('moment');
+
 module.exports = {
   host: 'localhost',
   port: 8000,
@@ -12,12 +14,12 @@ module.exports = {
   description: '记录开发生活,ccoderJava,聪聪,ccoder',
   theme: '@vuepress/blog',
   themeConfig: {
-    lastUpdated: '上次更新',
+    lastUpdated: true,
     dateFormat: 'YYYY-MM-DD hh:mm:ss',
-    logo:'./public/favicon.png',
+    logo: './favicon.ico',
     nav: [
       { text: '首页', link: '/' },
-      { text: '分类', link: '/category/' },
+      // { text: '分类', link: '/category/' },
       { text: '标签', link: '/tag/' },
     ],
     footer: {
@@ -76,6 +78,7 @@ module.exports = {
     '@vuepress/medium-zoom',
     '@vuepress/active-header-links',
     '@markspec/vuepress-plugin-footnote',
-    'vuepress-plugin-viewer'
+    'vuepress-plugin-viewer',
+    '@vuepress/last-updated',
   ],
 }
