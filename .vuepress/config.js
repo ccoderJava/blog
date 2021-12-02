@@ -14,7 +14,7 @@ module.exports = {
   description: '记录开发生活,ccoderJava,聪聪,ccoder',
   theme: '@vuepress/blog',
   themeConfig: {
-    lastUpdated: true,
+    lastUpdated: "上次更新",
     dateFormat: 'YYYY-MM-DD hh:mm:ss',
     logo: './favicon.ico',
     nav: [
