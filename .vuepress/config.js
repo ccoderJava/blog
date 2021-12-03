@@ -19,8 +19,8 @@ module.exports = {
     logo: './favicon.ico',
     nav: [
       { text: '首页', link: '/' },
-      // { text: '分类', link: '/category/' },
       { text: '标签', link: '/tag/' },
+      { text: '个人简历', target: '_blank', link: 'https://ccoderjava.github.io/chencong_java software engineer_4 years.pdf' },
     ],
     footer: {
       copyright: [
