@@ -80,5 +80,9 @@ module.exports = {
     '@markspec/vuepress-plugin-footnote',
     'vuepress-plugin-viewer',
     '@vuepress/last-updated',
+    '@vuepress/google-analytics',
+      {
+        'ga': 'G-40YT5YJMBG' // UA-00000000-0
+      }
   ],
 }
