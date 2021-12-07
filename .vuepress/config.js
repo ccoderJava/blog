@@ -8,7 +8,7 @@ module.exports = {
   head: [
     ['meta', { name: 'Keywords', content: 'ccoderJava,ccoder,聪聪的日志' }],
     ['meta', { name: 'description', content: '记录开发生活,ccoderJava,聪聪,ccoder' }],
-    ['link', { rel: 'icon', href: '../public/favicon.ico' }],
+    ['link', { rel: 'icon', href: './favicon.ico' }],
     // google analytic
     ['script', { src: "https://www.googletagmanager.com/gtag/js?id=G-40YT5YJMBG", async: true }],
     ['script', {},
