@@ -8,13 +8,23 @@ module.exports = {
   head: [
     ['meta', { name: 'Keywords', content: 'ccoderJava,ccoder,聪聪的日志' }],
     ['meta', { name: 'description', content: '记录开发生活,ccoderJava,聪聪,ccoder' }],
-    ['link', { rel: 'icon', href: '../public/favicon.ico' }]
-    ['script', { src: 'https://www.googletagmanager.com/gtag/js?id=G-40YT5YJMBG',async: true}],
+    ['link', { rel: 'icon', href: '../public/favicon.ico' }],
+    // google analytic
+    ['script', { src: "https://www.googletagmanager.com/gtag/js?id=G-40YT5YJMBG", async: true }],
     ['script', {},
-                " window.dataLayer = window.dataLayer || [];\
-                function gtag(){dataLayer.push(arguments);}\
-                gtag('js', new Date());\
-                gtag('config', 'G-40YT5YJMBG');"],
+      ` window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-40YT5YJMBG');`],
+    // baidu 统计
+    ['script', {},
+      `var _hmt = _hmt || [];
+               (function() {
+                 var hm = document.createElement("script");
+                 hm.src = "https://hm.baidu.com/hm.js?921719b1f1d6a98cb84343b54b11c7dd";
+                 var s = document.getElementsByTagName("script")[0]; 
+                 s.parentNode.insertBefore(hm, s);
+               })();`],
   ],
   title: '聪聪的日志',
   description: '记录开发生活,ccoderJava,聪聪,ccoder',
@@ -85,6 +95,6 @@ module.exports = {
     '@vuepress/active-header-links',
     '@markspec/vuepress-plugin-footnote',
     'vuepress-plugin-viewer',
-    '@vuepress/last-updated',
+    '@vuepress/last-updated'
   ],
 }
