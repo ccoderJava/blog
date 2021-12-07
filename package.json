@@ -7,7 +7,6 @@
   "devDependencies": {
     "@markspec/vuepress-plugin-footnote": "^1.1.2",
     "@vuepress/plugin-back-to-top": "^1.8.2",
-    "@vuepress/plugin-google-analytics": "^1.8.2",
     "@vuepress/plugin-medium-zoom": "^1.5.0",
     "@vuepress/theme-blog": "^2.2.0",
     "vuepress": "^1.5.0",

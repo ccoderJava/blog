@@ -9,6 +9,12 @@ module.exports = {
     ['meta', { name: 'Keywords', content: 'ccoderJava,ccoder,聪聪的日志' }],
     ['meta', { name: 'description', content: '记录开发生活,ccoderJava,聪聪,ccoder' }],
     ['link', { rel: 'icon', href: '../public/favicon.ico' }]
+    ['script', { src: 'https://www.googletagmanager.com/gtag/js?id=G-40YT5YJMBG',async: true}],
+    ['script', {},
+                " window.dataLayer = window.dataLayer || [];\
+                function gtag(){dataLayer.push(arguments);}\
+                gtag('js', new Date());\
+                gtag('config', 'G-40YT5YJMBG');"],
   ],
   title: '聪聪的日志',
   description: '记录开发生活,ccoderJava,聪聪,ccoder',
@@ -80,9 +86,5 @@ module.exports = {
     '@markspec/vuepress-plugin-footnote',
     'vuepress-plugin-viewer',
     '@vuepress/last-updated',
-    '@vuepress/google-analytics',
-      {
-        'ga': 'G-40YT5YJMBG' // UA-00000000-0
-      }
   ],
 }
