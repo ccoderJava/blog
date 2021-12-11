@@ -1,5 +1,5 @@
 ---
-title: 欢聚集团(Joyy)-Java海外支付岗位-面试总结
+title: 欢聚集团(Joyy)-Shopeline-Java海外支付岗位-面试总结
 date: 2021-12-11 18:41:16
 author: 聪聪
 category: 面试
