@@ -71,7 +71,7 @@ module.exports = {
       },
       prevText: '上一页', // Text for previous links.
       nextText: '下一页', // Text for next links.
-      lengthPerPage: 5, // Maximum number of posts per page.
+      lengthPerPage: 6, // Maximum number of posts per page.
     },
     comment: {
       service: 'vssue',

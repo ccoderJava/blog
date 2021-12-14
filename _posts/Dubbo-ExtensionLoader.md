@@ -5,7 +5,7 @@ author: 聪聪
 category: Dubbo
 tags:
   - Dubbo
-  - ExtensionLoader
+  - SPI
 ---
 
 [[toc]]
