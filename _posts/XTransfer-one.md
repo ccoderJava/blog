@@ -96,7 +96,13 @@ ftp和sftp都是日常工作中常用的文件传输方式。
   一个事务先根据某些条件查询出一些记录，之后另一个事务又向表中插入了符合这些条件的记录，原先的事务再次按照该条件查询时，能把另一个事务插入的记录也读出来。（幻读在读未提交、读已提交、可重复读隔离级别都可能会出现）
 
 ### 数据库隔离级别
-+ 
++ DEFAULT
++ READ_UNCOMMITTED(读未提交)
++ READ_COMMITED(读已提交)
++ REPEATABLE_READ(重复读取)
++ SERLALIZABLE(串行化)
+
+![事务隔离级别可能造成的问题](./files/xtransfer/transaction_status.jpg)
 
 ## 泛型擦除
 
