@@ -20,6 +20,7 @@ tags:
 ## 3.(前面引入)分布式事务在业务上如何落地的
 
 ## 4.(前面引入)Redis和DB一致性问题的解决方案
+> + [分布式缓存一致性](https://www.its404.com/article/alionsss/107451485)
 
 ### 4.1 缓存读写策略
 + Cache Aside Pattern（旁路缓存模式)
