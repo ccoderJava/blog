@@ -11,7 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: build
-        run: yarn && yarn run dist
+        # run: yarn && yarn run dist
+        run: yarn run dist
       - name: deploy
         run: |
           cd dist
