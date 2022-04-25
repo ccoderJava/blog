@@ -79,10 +79,10 @@ module.exports = {
       repo: 'blog',
       clientId: 'e840ebe73571b97960d3',
       clientSecret: 'f8db56f33f43d10612a08703ff4569b45b484110',
-      proxy: 'http://blog.ccoder.cc/'
+      proxy: 'http://www.ccoder.cc/'
     },
     feed: {
-      canonical_base: 'http://blog.ccoder.cc/',
+      canonical_base: 'http://www.ccoder.cc/',
     }
   },
   markdown: {
