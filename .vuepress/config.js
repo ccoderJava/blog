@@ -41,7 +41,7 @@ module.exports = {
     footer: {
       copyright: [
         {
-          text: 'Powered by VuePress | 鄂ICP备2021021487号',
+          text: 'Powered by VuePress | 鄂ICP备2021021487号-1',
           link: 'https://beian.miit.gov.cn/',
         },
       ],
