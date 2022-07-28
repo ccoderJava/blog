@@ -175,4 +175,4 @@ npm(Nginx proxy manage)进行配置二级域名反向代理。
 ----
 
 了解更多内容，可以关注我的微信公众号，更多首发文章。
-![wechat](../files/wechat/wechat.png)
+![wechat](https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-07-28-064228.bmp)
