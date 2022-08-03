@@ -116,8 +116,6 @@ module.exports = {
     '@vuepress/active-header-links',
     '@markspec/vuepress-plugin-footnote',
     'vuepress-plugin-viewer',
-    '@vuepress/last-updated', {
-      transformer: timestamp => timestamp
-    }
+    '@vuepress/last-updated'
   ],
 }
