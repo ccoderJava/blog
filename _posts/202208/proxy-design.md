@@ -2,7 +2,7 @@
 title: 代理模式-Proxy
 date: 2022-08-20 18:45:14
 author: 聪聪
-category: 代理模式
+category: 设计模式
 tags:
 - 代理模式
 - Proxy
