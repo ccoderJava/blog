@@ -678,5 +678,5 @@ public class TestAbstractStrategyFactory {
 ---
 
 了解更多内容，可以关注我的微信公众号，更多首发文章。
-![wechat](https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-07-28-064228.bmp)
+![wechat](https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-09-27-031343.png)
 
