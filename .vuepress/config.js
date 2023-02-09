@@ -40,7 +40,7 @@ module.exports = {
       {
         text: '个人简历',
         target: '_blank',
-        link: 'https://ccoderjava.github.io/chencong_java software engineer_4 years.pdf'
+        link: 'https://ccoderjava.github.io/chencong_Java software engineer_5 years.pdf'
       },
     ],
     footer: {
