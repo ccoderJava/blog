@@ -15,7 +15,7 @@ tags:
 
 ### 假如以下sql有慢查，如何分析，如果要优化，该如何做，讲讲原因
 
-    ```sql
+ ```sql
     select
     *
     from
@@ -26,7 +26,7 @@ tags:
     and start_time>1371169729
     and start_time<1371174603
     and type=2;
-    ```
+```
 
 ### 请列举一个空间换时间的Java集合类，谈谈底层是如何实现的
 
