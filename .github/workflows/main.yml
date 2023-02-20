@@ -10,9 +10,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: build
-        run: yarn && yarn run dist
-      - name: deploy
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+      - name: Install dependencies and build
+        run: |
+          yarn 
+          yarn run dist
+      - name: Deploy
         run: |
           cd dist
 
