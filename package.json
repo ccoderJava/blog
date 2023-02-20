@@ -14,5 +14,11 @@
   },
   "dependencies": {
     "moment": "^2.29.1"
+  },
+  "browserslist": {
+    "config": ".browserslistrc",
+    "path": "node_modules/browserslist",
+    "query": "> 0.5%, last 2 versions, not dead"
   }
+
 }
