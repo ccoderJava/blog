@@ -1,6 +1,7 @@
 ---
 title: Dubbo-ExtensionLoader
 date: 2021-12-02 14:58:56
+star: true
 author: 聪聪
 category: Dubbo
 tags:
@@ -8,7 +9,7 @@ tags:
   - SPI
 ---
 
-[[toc]]
+[TOC]
 
 ## 扩展点加载机制
 

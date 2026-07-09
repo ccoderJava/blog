@@ -2,7 +2,7 @@
 title: 策略模式与工厂模式实践
 date: 2022-09-24 16:49:15
 author: 聪聪
-category:
+category: 设计模式
 tags:
 - strategy
 - factory
@@ -13,7 +13,7 @@ hello，大家好，我是聪聪。
 
 ---
 
-[toc]
+[TOC]
 
 ## 1.介绍
 

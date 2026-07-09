@@ -21,7 +21,7 @@ tags:
 ## JVM内存模型知道吗？说一下你对JVM内存模型的理解。
 
 主要有一个图很经典。脑海里面要有这个图。
-![JVM内存模型](./files/interview/jvm_memory.jpg)
+![JVM内存模型](../files/interview/jvm_memory.jpg)
 class文件->类加载器(classloader)->加载这个图,哪些内存区间是私有独立的，哪些是线程共享的。
 
 ## Java类加载器
@@ -51,7 +51,7 @@ class文件->类加载器(classloader)->加载这个图,哪些内存区间是私
 ## 线程的几个状态
 
 这个脑海里面也有个线程生命周期的图。New、Runnable、Running、Terminated、Timed_Waiting、Blocked、Waiting等。
-![线程状态](./files/interview/java_thread_status.jpg)
+![线程状态](../files/interview/java_thread_status.jpg)
 在线程转移图中的各个状态是如何跃迁转移的。涉及到哪些方法，在什么时候触发。
 
 ## 说说你对线程池的了解

@@ -22,13 +22,13 @@ ftp和sftp都是日常工作中常用的文件传输方式。
 
 - **主动模式**
 
-    ![FTP与SFTP两者有什么区别](./files/interview/ftp_port.png)
+    ![FTP与SFTP两者有什么区别](../files/interview/ftp_port.png)
 
     FTP客户端和服务器首先通过Port 21端口进行建立连接，通过这个通道发送命令。客户端需要接受数据时在此端口上进行Port命令。Port命令包含了客户端用什么端口进行接受数据，在传输数据时服务器端通过自己的TCP21端口连接到客户端指定的端口进行发送数据。
 
 - **被动模式**
 
-    ![FTP与SFTP两者有什么区别](./files/interview/ftp_pasv.png)
+    ![FTP与SFTP两者有什么区别](../files/interview/ftp_pasv.png)
 
     建立通道与主动模式相似，建立之后是Pasv命令。服务器收到呢Pasv命令后随机打开一个高端端口(大于1024)并且通知客户端在这个端口上进行请求，客户端连接FTP服务器此端口，通过三次握手进行建立通道，然后服务器通过这个端口进行数据的传输。
 
@@ -102,7 +102,7 @@ ftp和sftp都是日常工作中常用的文件传输方式。
 + REPEATABLE_READ(重复读取)
 + SERLALIZABLE(串行化)
 
-![事务隔离级别可能造成的问题](./files/xtransfer/transaction_status.jpg)
+![事务隔离级别可能造成的问题](../files/xtransfer/transaction_status.jpg)
 
 ## 泛型擦除
 

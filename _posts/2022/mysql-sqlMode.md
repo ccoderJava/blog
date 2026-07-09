@@ -9,7 +9,7 @@ tags:
 ---
 
 
-[toc]
+[TOC]
 
 hello，大家好，我是聪聪。
 

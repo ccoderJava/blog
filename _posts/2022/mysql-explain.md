@@ -1,6 +1,7 @@
 ---
 title: MySQL-Explain总结
 date: 2022-08-11 10:40:11
+star: true
 author: 聪聪
 category: MySQL
 tags:

@@ -1,0 +1,126 @@
+// .vuepress/styles/index.scss
+// CSS custom properties for light/dark mode
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #2c3e50;
+  --text-light: #6a8bad;
+  --border-color: #eaecef;
+  --code-bg: #f5f7fa;
+  --blockquote-bg: #f8f9fa;
+  --accent-color: #2196f3;
+  --card-bg: #ffffff;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1a1b1e;
+    --text-color: #e4e6eb;
+    --text-light: #b0b3b8;
+    --border-color: #3a3b3d;
+    --code-bg: #282c34;
+    --blockquote-bg: #242526;
+    --accent-color: #64b5f6;
+    --card-bg: #242526;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+}
+
+// Images centered
+img {
+  display: block;
+  margin: auto;
+}
+
+// Blockquote
+blockquote {
+  word-break: break-all;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--accent-color);
+}
+
+div[class*="language-"] .line-numbers-wrapper {
+  color: var(--text-light);
+}
+
+// ===== Blog Homepage Compact Layout =====
+
+// Shrink the blog hero / info panel at top of homepage
+.vp-blog-hero {
+  padding: 1.5rem 1rem !important;
+  margin-bottom: 0 !important;
+
+  .vp-blog-hero-title {
+    font-size: 1.5rem !important;
+  }
+
+  .vp-blog-hero-description {
+    font-size: 0.9rem !important;
+  }
+}
+
+// Article card style
+.vp-article-item {
+  padding: 1.5rem 1.5rem !important;
+  margin-bottom: 1rem !important;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: var(--shadow);
+  }
+}
+
+.vp-article-item .vp-article-title a {
+  font-size: 1.15rem !important;
+  line-height: 1.5 !important;
+}
+
+// Show ~8 lines of excerpt
+.vp-article-excerpt {
+  max-height: 13em;
+  overflow: hidden;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: 0.6rem;
+}
+
+.vp-article-item .page-info {
+  font-size: 0.8rem !important;
+  margin-top: 0.4rem !important;
+  padding-top: 0.4rem !important;
+  border-top: 1px solid var(--border-color);
+  opacity: 0.8;
+}
+
+// Hide the blog info panel avatar
+.vp-blog-info .vp-blog-info-avatar {
+  display: none;
+}
+
+// ===== Navbar logo alignment =====
+.vp-brand {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.vp-nav-logo {
+  height: 1.5rem !important;
+  width: auto !important;
+  margin-right: 0.5rem;
+  border-radius: 3px;
+}
+
+.vp-site-name {
+  font-size: 1.15rem !important;
+}

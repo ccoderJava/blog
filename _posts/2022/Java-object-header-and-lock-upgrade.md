@@ -1,13 +1,14 @@
 ---
 title: Java对象头和锁的升级过程
 date: 2022-07-28 14:38:57
+star: true
 author: 聪聪
 category: Java
 tags:
 - 锁
 - 技术总结
 ---
-[toc]
+[TOC]
 
 hello，大家好，我是聪聪。
 
