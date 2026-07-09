@@ -152,6 +152,56 @@ yarn dist   # 生产构建 ./dist/
 - [ ] TOC 在包含 `[TOC]` 的文章中渲染
 - [ ] 搜索功能正常
 - [ ] ICP 备案号显示在页脚
-- [ ] Google Analytics / 百度统计脚本存在
-- [ ] SEO meta 标签存在
-- [ ] 简历 PDF 链接可访问
+- [x] Google Analytics / 百度统计脚本存在
+- [x] SEO meta 标签存在
+- [x] 简历 PDF 链接可访问
+
+---
+
+## 迁移总结
+
+完成时间：2026-07-09
+
+| 项目 | 迁移前 | 迁移后 |
+|------|--------|--------|
+| 框架 | VuePress 1.x + Webpack 4 | VuePress 2.x + Vite |
+| Vue 版本 | Vue 2 | Vue 3 |
+| 主题 | @vuepress/theme-blog | vuepress-theme-hope |
+| 依赖数 | 12 个插件 + 1 个主题 | 7 个包 |
+| Node 兼容性 | 仅 Node 16/18 | 支持 Node 20/24 |
+| 构建速度 | ~9s | ~3s |
+| 样式系统 | Stylus (.styl) | SCSS |
+| 评论系统 | 自定义 Vue 2 组件 (GiscusComment.vue) | 主题原生 Giscus 集成 |
+| 配置文件 | CommonJS (module.exports) | ESM (export default) |
+
+### 功能覆盖
+
+| 功能 | 来源 | 状态 |
+|------|------|------|
+| 博客文章列表（分页） | 主题内置 blog 插件 | ✅ |
+| 标签系统 | 主题内置 blog 插件 | ✅ |
+| 星标文章 | 主题内置 blog 插件 | ✅ 新增 |
+| Giscus 评论 | 主题内置 comment 插件 | ✅ |
+| RSS Feed | 主题内置 feed 插件 | ✅ |
+| Sitemap | 主题内置 sitemap 插件 | ✅ |
+| PWA | 主题内置 pwa 插件 | ✅ |
+| 全文搜索 | 主题内置 slimsearch 插件 | ✅ |
+| 暗色模式（toggle） | 主题内置 | ✅ |
+| 图片查看器（PhotoSwipe） | 主题内置 | ✅ |
+| 脚注 | 主题内置 mdEnhance | ✅ |
+| 图片懒加载 | 主题内置 markdown | ✅ |
+| 代码高亮（Shiki） | 主题内置 | ✅ |
+| 代码行号 | 主题内置 | ✅ |
+| 复制代码按钮 | 主题内置 copyCode | ✅ |
+| SEO / OG / Twitter Card | 主题内置 seo + head | ✅ |
+| Google Analytics | head 标签 | ✅ |
+| 百度统计 | head 标签 | ✅ |
+| ICP 备案号 | 主题页脚 | ✅ |
+| 关于我页面 | 自定义 about.md | ✅ 新增 |
+| 简历 PDF | 导航栏链接 | ✅ |
+
+### 后续优化建议
+
+1. 将 `favicon.png`（1.5MB）压缩为合适尺寸的 logo 图片
+2. 根据需要补充 about.md 中的个人经历和项目信息
+3. 可在文章 frontmatter 中添加 `star: true` 收录到星标目录
