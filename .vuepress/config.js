@@ -10,7 +10,7 @@ export default {
   lang: 'zh-CN',
   port: 8000,
   shouldPrefetch: false,
-  pagePatterns: ['**/*.md', '!README.md', '!MIGRATION_PLAN.md', '!.vuepress', '!node_modules'],
+  pagePatterns: ['**/*.md', '!README.md', '!docs/**', '!.vuepress', '!node_modules'],
 
   head: [
     // SEO meta
