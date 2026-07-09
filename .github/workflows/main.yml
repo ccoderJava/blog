@@ -16,8 +16,10 @@ jobs:
           node-version: '20.x'
           cache: 'yarn'
       - name: Install dependencies and build
+        env:
+          YARN_ENABLE_IMMUTABLE_INSTALLS: false
         run: |
-          yarn
+          yarn install --ignore-engines
           yarn run dist
       - name: Deploy
         run: |
