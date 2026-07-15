@@ -2,8 +2,6 @@
 // CSS custom properties for light/dark mode
 
 :root {
-  --bg-color: #ffffff;
-  --text-color: #2c3e50;
   --text-light: #6a8bad;
   --border-color: #eaecef;
   --code-bg: #f5f7fa;
@@ -13,18 +11,22 @@
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #1a1b1e;
-    --text-color: #e4e6eb;
-    --text-light: #b0b3b8;
-    --border-color: #3a3b3d;
-    --code-bg: #282c34;
-    --blockquote-bg: #242526;
-    --accent-color: #64b5f6;
-    --card-bg: #242526;
-    --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  }
+html[data-theme="dark"] {
+  --text-light: #b0b3b8;
+  --border-color: #3a3b3d;
+  --code-bg: #282c34;
+  --blockquote-bg: #242526;
+  --accent-color: #64b5f6;
+  --card-bg: #242526;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
 }
 
 // Images centered
@@ -39,12 +41,12 @@ blockquote {
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: light-dark(#ffffff, #1a1b1e);
+  color: light-dark(#2c3e50, #e4e6eb);
 }
 
 a {
-  color: var(--accent-color);
+  color: light-dark(#2196f3, #64b5f6);
 }
 
 div[class*="language-"] .line-numbers-wrapper {
@@ -91,7 +93,7 @@ div[class*="language-"] .line-numbers-wrapper {
   overflow: hidden;
   font-size: 0.9rem;
   line-height: 1.6;
-  color: var(--text-light);
+  color: light-dark(#6a8bad, #b0b3b8);
   margin-bottom: 0.6rem;
 }
 
