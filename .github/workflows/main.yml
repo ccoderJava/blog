@@ -23,14 +23,17 @@ jobs:
           yarn run dist
       - name: Deploy
         run: |
-          cd dist
+          TEMP_DIR=$(mktemp -d)
+          git clone --depth 1 https://ccoderJava:${{ secrets.BLOG_ACCESS_TOKEN }}@github.com/ccoderJava/ccoderJava.github.io.git "$TEMP_DIR"
+          cd "$TEMP_DIR"
 
-          # 如果是发布到自定义域名
-          echo 'blog.ccoder.cc' > CNAME
+          rm -rf blog
+          mkdir -p blog
+          cp -r "$GITHUB_WORKSPACE/dist/"* blog/
+          cp "$GITHUB_WORKSPACE/dist/CNAME" . 2>/dev/null || true
 
-          git init
           git config user.email "congccoder@gmail.com"
           git config user.name "ccoderJava"
           git add -A
-          git commit -am "auto deploy from action $(date)"
-          git push -f https://ccoderJava:${{ secrets.BLOG_ACCESS_TOKEN }}@github.com/ccoderJava/ccoderJava.github.io.git master
+          git diff --staged --quiet || git commit -m "auto deploy from action $(date)"
+          git push
