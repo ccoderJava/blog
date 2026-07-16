@@ -10,7 +10,7 @@ export default {
   lang: 'zh-CN',
   port: 8000,
   shouldPrefetch: false,
-  pagePatterns: ['**/*.md', '!README.md', '!AGENTS.md', '!docs/**', '!.vuepress', '!node_modules'],
+  pagePatterns: ['**/*.md', '!AGENTS.md', '!docs/**', '!.vuepress', '!node_modules'],
 
   head: [
     // SEO meta
@@ -19,6 +19,7 @@ export default {
     ['meta', { name: 'author', content: '聪聪' }],
     ['meta', { name: 'robots', content: 'index,follow' }],
     ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
 
     // Open Graph / Facebook
     ['meta', { property: 'og:title', content: '聪聪碎碎念' }],
@@ -79,7 +80,8 @@ export default {
 
     // Navbar
     navbar: [
-      { text: '文章', link: '/' },
+      { text: '文章', link: '/article/' },
+      { text: '分类', link: '/category/' },
       { text: '随笔', link: '/notes/' },
       { text: '标签', link: '/tag/' },
       { text: '关于我', link: '/about' },
@@ -92,6 +94,7 @@ export default {
     blog: {
       name: '聪聪',
       description: 'Java 后端开发工程师，专注支付行业与分布式系统',
+      article: '/article/',
     },
 
     // Dark mode
@@ -121,8 +124,6 @@ export default {
     plugins: {
       // Enable blog feature
       blog: {
-        article: '/',
-        // Auto-excerpt: shorter excerpts for compact cards
         excerptLength: 100,
       },
 
@@ -177,6 +178,11 @@ export default {
             placeholder: '搜索...',
           },
         },
+      },
+
+      // Reading time (Chinese: ~300 characters per minute)
+      readingTime: {
+        wordPerMinute: 300,
       },
 
       // Sitemap

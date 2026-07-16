@@ -55,7 +55,59 @@ div[class*="language-"] .line-numbers-wrapper {
 
 // ===== Blog Homepage Compact Layout =====
 
-// Shrink the blog hero / info panel at top of homepage
+// Home page hero section
+.vp-hero-info-wrapper {
+  padding: 3rem 1.5rem 2rem !important;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4ecf7 100%);
+
+  .vp-hero-info {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .vp-hero-mask {
+    background: transparent !important;
+  }
+}
+
+html[data-theme="dark"] .vp-hero-info-wrapper {
+  background: linear-gradient(135deg, #1a1b1e 0%, #1e2430 100%);
+}
+
+.vp-hero-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+// Feature cards on home page
+.vp-features {
+  padding: 2rem 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.vp-feature-item {
+  padding: 1.25rem 1.5rem !important;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  transition: box-shadow 0.3s, transform 0.3s;
+
+  &:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+  }
+}
+
+.vp-feature-item .icon {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+// Shrink the blog hero / info panel at top of blog page
 .vp-blog-hero {
   padding: 1.5rem 1rem !important;
   margin-bottom: 0 !important;
